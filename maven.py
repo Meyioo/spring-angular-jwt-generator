@@ -9,3 +9,13 @@ def check_maven_installation():
         print('Found Maven installation version:', match.group(0))
     else:
         print('Version not found. Please install the latest version of Maven on your System.')
+        choice = input('Install the latest maven version Y/N?: ')
+        if choice == 'Y':
+            setup()
+
+
+def setup():
+    x = 0
+
+def run():
+    check_maven_installation()
