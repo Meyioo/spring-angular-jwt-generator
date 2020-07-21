@@ -1,9 +1,6 @@
 from constants import operating_systems
 import platform
 
-class operating_system:
-    type
-
 
 def check_operating_system():
     os = platform.system()
