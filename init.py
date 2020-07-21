@@ -1,6 +1,7 @@
 import operating_system
 
 import angular
+import node
 import maven
 import java
 
@@ -12,4 +13,5 @@ java.run()
 maven.run()
 
 # Frontend tasks
+node.run()
 angular.run()
