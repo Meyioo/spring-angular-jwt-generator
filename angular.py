@@ -3,7 +3,7 @@ import subprocess
 
 
 def check_angular_installation():
-    result = subprocess.call(['ng', '-version'], stderr=subprocess.STDOUT)
+    result = subprocess.check_output('ng --version', stderr=subprocess.STDOUT, shell=True)
     match = re.search(r"\d+\.\d+\.\d", str(result))
     if match is not None:
         print('Found angular installation version:', match.group(0))

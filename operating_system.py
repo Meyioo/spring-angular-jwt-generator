@@ -1,16 +1,16 @@
-from constants import operating_systems
+from constants import constants
 import platform
 
 
 def check_operating_system():
     os = platform.system()
     print('Your operating system is ', end='')
-    if os == operating_systems.WINDOWS:
-        print(operating_systems.WINDOWS)
-    elif os == operating_systems.LINUX:
-        print(operating_systems.LINUX)
+    if os == constants.WINDOWS:
+        print(constants.WINDOWS)
+    elif os == constants.LINUX:
+        print(constants.LINUX)
     else:
-        print(operating_systems.MAC)
+        print(constants.MAC)
 
 
 def run():
